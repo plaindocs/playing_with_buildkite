@@ -5,5 +5,5 @@ steps:
       - "content/*"
   - label: "Download THIS"
     command: 
-      - buildkite-agent artifact download content/test.txt
-      - cat test.txt
+      - buildkite-agent artifact download content/test.txt output
+      - cat output/content/test.txt
