@@ -6,3 +6,4 @@ steps:
   - label: "Download THIS"
     command: 
       - buildkite-agent artifact download "*.txt" .
+      - buildkite-agent artifact download "content/*.txt" .
