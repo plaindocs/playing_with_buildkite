@@ -2,4 +2,4 @@ steps:
   - label: "Example Test"
     command: echo "Hello!"
     artifact_paths:
-      - "content/test.md; content/test.txt"
+      - "content/*"
