@@ -3,3 +3,7 @@ steps:
     command: echo "Hello!"
     artifact_paths:
       - "content/*"
+  - label: "Download THIS"
+    command: 
+      - buildkite-agent artifact download content/test.txt
+      - cat test.txt
