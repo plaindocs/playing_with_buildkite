@@ -5,4 +5,4 @@ steps:
       - "content/*"
   - label: "Download THIS"
     command: 
-      - buildkite-agent artifact download "content/*" .
+      - buildkite-agent artifact download "content/**" .
