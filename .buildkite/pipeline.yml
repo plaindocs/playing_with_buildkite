@@ -2,7 +2,7 @@ steps:
   - label: "Example Test"
     command: echo "Hello!"
     artifact_paths:
-      - "content/*"
+      - "content/**/*"
   - label: "Download THIS"
     command: 
       - buildkite-agent artifact download "content/**/*" .
