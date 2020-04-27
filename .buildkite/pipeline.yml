@@ -6,14 +6,9 @@ steps:
     key: lint
     
   - block
-    
-  - depends_on: 
+    depends_on: 
       - build 
       - lint
-    command:
-      - echo "AFTER?"
 
-  - block
-
-  - command:
+ - command:
       - echo "For real now?"  
