@@ -10,5 +10,4 @@ steps:
       - build 
       - lint
 
- - command:
-      - echo "For real now?"  
+ - command: echo "For real now?"  
