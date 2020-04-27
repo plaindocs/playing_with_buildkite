@@ -1,0 +1,15 @@
+steps:
+  - command: echo "BUILD"
+    key: build
+  
+  - command: echo "LINT"
+    key: lint
+    
+  - block
+    
+  - depends_on: 
+      - build 
+      - lint
+    command:
+      - buildkite-agent artifact download 'dist/*' .
+      - yarn integration-tests
