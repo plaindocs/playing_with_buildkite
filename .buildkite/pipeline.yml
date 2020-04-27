@@ -6,6 +6,7 @@ steps:
     key: lint
     
   - block: "Thou shall not pass"
-    depends_on: build 
 
   - command: echo "For real now?"  
+    depends_on: build 
+
