@@ -5,7 +5,7 @@ steps:
   - command: echo "LINT"
     key: lint
     
-  - block
+  - block: "Thou shall not pass"
     depends_on: 
       - build 
       - lint
