@@ -11,5 +11,9 @@ steps:
       - build 
       - lint
     command:
-      - buildkite-agent artifact download 'dist/*' .
-      - yarn integration-tests
+      - echo "AFTER?"
+
+  - block
+
+  - command:
+      - echo "For real now?"  
