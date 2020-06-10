@@ -2,9 +2,6 @@ env:
   ANDROID_SDK_ROOT: "/home/samuel/Android/Sdk"
 
 steps:
-  - command: chmod +x ./gradlew
-    label: "Why CHMOd why" 
-
   - command: ./gradlew androidDependencies
     label: "Dependencies"
 
