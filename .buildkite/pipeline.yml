@@ -1,4 +1,7 @@
 steps:
+  env:
+    ANDROID_SDK_ROOT: "/home/samuel/Android/Sdk"
+
   - command: chmod +x ./gradlew
     label: "Why CHMOd why" 
 
