@@ -13,4 +13,6 @@ steps:
 
   - command: ./gradlew assemble
     label: "Build"
+    artifact_paths:
+      - app/build/outputs/apk/release/app-release-unsigned.apk
 
