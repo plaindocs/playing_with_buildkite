@@ -1,4 +1,7 @@
 steps:
+  - command: ./gradlew androidDependencies
+    label: "Dependencies"
+
   - command: ./gradlew test
     label: "Test"
 
