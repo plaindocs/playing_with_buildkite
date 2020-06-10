@@ -1,12 +1,10 @@
 steps:
-  - command: echo "BUILD"
-    key: build
-  
-  - command: echo "LINT"
-    key: lint
-    
-  - block: "Thou shall not pass"
+  - command: ./gradlew test
+    label: "Test"
 
-  - command: echo "For real now?"  
-    depends_on: build 
+  - command: ./gradlew check
+    label: "Lint"
+
+  - command: ./gradlew assemble
+    label: "Build"
 
