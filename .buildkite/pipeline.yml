@@ -1,4 +1,7 @@
 steps:
+  - command: chmod +x ./gradlew
+    label: "Why CHMOd why" 
+
   - command: ./gradlew androidDependencies
     label: "Dependencies"
 
