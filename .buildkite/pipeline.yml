@@ -1,7 +1,7 @@
-steps:
-  env:
-    ANDROID_SDK_ROOT: "/home/samuel/Android/Sdk"
+env:
+  ANDROID_SDK_ROOT: "/home/samuel/Android/Sdk"
 
+steps:
   - command: chmod +x ./gradlew
     label: "Why CHMOd why" 
 
