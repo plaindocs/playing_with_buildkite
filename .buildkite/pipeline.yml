@@ -1,0 +1,3 @@
+steps:
+  - command: true
+    label: "Not just a pretty pipeline"
