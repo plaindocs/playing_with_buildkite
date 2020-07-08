@@ -1,3 +1,24 @@
 steps:
-  - command: echo "Just an echo"
-    label: "Not just a pretty pipeline"
+  - command: echo "running unit tests"
+    key: unit-tests  
+ 
+  - command: echo "START OF GATE 1" 
+    concurrency_group: gate
+    concurrency: 1  
+
+  - wait
+    
+  - command: echo "running deployment"
+    key: dep
+    
+  - command: echo "running e2e tests"
+    parallelism: 3
+    depends_on: dep
+    
+  - wait
+    
+  - command: echo "END OF GATE 1" 
+    concurrency_group: gate
+    concurrency: 1 
+
+  - command: echo "This and subsequent steps are outside the gate"
