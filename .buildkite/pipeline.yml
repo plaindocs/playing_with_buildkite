@@ -1,5 +1,5 @@
 steps:
-  - trigger: deploy-pipeline
+  - trigger: "deploy-pipeline"
       build:
         skip: Why
   - command: echo "Just an echo"
