@@ -1,0 +1,3 @@
+steps:
+  - command: echo "Just a deploy echo"
+    label: "Not just a pretty pipeline"
