@@ -1,6 +1,3 @@
 steps:
-  - trigger: "deploy-pipeline"
-      build:
-        skip: Why
   - command: echo "Just an echo"
     label: "Not just a pretty pipeline"
