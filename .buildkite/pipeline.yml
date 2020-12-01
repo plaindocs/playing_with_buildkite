@@ -1,7 +1,5 @@
 steps:
   - key: "step-a"
-    soft_fail:
-      - exit_status: 42
     command: "echo A; exit 42"
   - key: "step-b"
     depends_on:
