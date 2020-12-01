@@ -1,9 +1,11 @@
 steps:
   - key: "step-a"
-    command: "echo A; exit 42"
+    command: echo "soft fail" && exit 42
+    soft_fail:
+      - exit_status: 42
+      
   - key: "step-b"
+    command: echo "Running"
     depends_on:
       - "step-a"
     allow_dependency_failure: false  
-    command: "echo B"  
-
