@@ -1,11 +1,12 @@
 steps:
-  - key: "step-a"
-    command: echo "soft fail" && exit 42
-    soft_fail:
-      - exit_status: 42
-      
-  - key: "step-b"
-    command: echo "Running"
+  - command: echo "Command fails" && exit 1
+    key: step-a
+  - command: echo "step-b does not run" && exit 0
+    key: step-b
     depends_on:
-      - "step-a"
-    allow_dependency_failure: false
+      - step: step-a
+  - command: "step-c runs even when step-b does not"
+    key: step-c
+    depends_on:
+      - step: step-b
+        allow_failure: true
