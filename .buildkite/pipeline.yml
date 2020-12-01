@@ -2,7 +2,10 @@ steps:
   - key: "step-a"
     soft_fail:
       - exit_status: 42
+    command: "echo A"  
   - key: "step-b"
     depends_on:
       - "step-a"
     allow_dependency_failure: false  
+    command: "echo A"  
+
