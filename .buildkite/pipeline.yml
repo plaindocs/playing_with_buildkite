@@ -1,6 +1,6 @@
 steps:
   - key: "step-a"
-    command: echo "soft fail" && exit 42
+    command: echo "soft fail" && exit 442
     soft_fail:
       - exit_status: 42
       
@@ -8,4 +8,4 @@ steps:
     command: echo "Running"
     depends_on:
       - "step-a"
-    allow_dependency_failure: false  
+    allow_dependency_failure: false
