@@ -1,6 +1,6 @@
 steps:
   - key: "step-a"
-    command: echo "soft fail" && exit 442
+    command: echo "soft fail" && exit 42
     soft_fail:
       - exit_status: 42
       
