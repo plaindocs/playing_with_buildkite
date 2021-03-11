@@ -1,2 +1,3 @@
 steps:
-  - command: export TEST_PASSWORD="testtest"; echo $TEST_PASSWORD
+  - command: TEST_PASSWORD="testtest"
+  - command: echo $TEST_PASSWORD
