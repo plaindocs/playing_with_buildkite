@@ -1,12 +1,2 @@
 steps:
-  - command: echo "step-a fails" && exit 1
-    key: step-a
-  - command: echo "step-b does not run" && exit 0
-    key: step-b
-    depends_on:
-      - step: step-a
-  - command: echo "step-c runs even when step-b does not"
-    key: step-c
-    depends_on:
-      - step: step-b
-        allow_failure: true
+  - command: export TEST_PASSWORD="testtest"; echo $TEST_PASSWORD
