@@ -1,2 +1,3 @@
 steps:
   - command: TEST_PASSWORD="testtest"
+  - command: echo "This is a $TEST_PASSWORD"
