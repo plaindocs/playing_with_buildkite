@@ -1,5 +1,5 @@
 steps:
   - command: TEST_PASSWORD="testtest"
-    label "Another"
+    label: "Another"
   - command: echo "This is a $TEST_PASSWORD"
     label: "Test the label?"
