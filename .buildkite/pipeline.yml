@@ -3,3 +3,4 @@ steps:
     label: "Another"
   - command: echo "This is a $TEST_PASSWORD"
     label: "Test the label?"
+  - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
