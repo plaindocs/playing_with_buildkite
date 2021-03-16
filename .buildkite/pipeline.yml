@@ -1,12 +1,8 @@
 steps:
   - label: "Tests"
-    command: true
+    command: echo "true"
     retry:
       automatic:
-        - exit_status: -1  # Agent was lost
-          limit: 2
-        - exit_status: 255 # Forced agent shutdown
-          limit: 2
         - exit_status: "*"
           limit: 1        
 
