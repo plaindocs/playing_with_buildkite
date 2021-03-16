@@ -7,6 +7,6 @@ steps:
           limit: 2
         - exit_status: 255 # Forced agent shutdown
           limit: 2
-        - exit_status: *
+        - exit_status: "*"
           limit: 1        
 
