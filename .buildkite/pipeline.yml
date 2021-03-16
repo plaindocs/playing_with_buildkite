@@ -1,6 +1,6 @@
 steps:
   - label: "Tests"
-    command: "tests.sh"
+    command: true
     retry:
       automatic:
         - exit_status: -1  # Agent was lost
