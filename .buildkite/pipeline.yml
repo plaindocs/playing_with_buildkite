@@ -2,10 +2,15 @@ steps:
   - label: 'Step 1'
     command: "false"
     key: 'one'
+  - label: 'Step 2'
+    command: "true"
+    key: 'two'
+
 
   - wait:
     continue_on_failure: true
 
-  - label: 'Step 2'
-    command: .buildkite/test.sh
-      
+  - label: 'Step 3'
+    command: `buildkite-agent step get "outcome" --step "one"`
+  - label: 'Step 4'
+    command: `buildkite-agent step get "outcome" --step "two"`      
