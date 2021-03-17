@@ -13,4 +13,4 @@ steps:
   - label: 'Step 3'
     command: '`buildkite-agent step get "outcome" --step "one"`'
   - label: 'Step 4'
-    command: '`buildkite-agent step get "outcome" --step "two"`''    
+    command: '`buildkite-agent step get "outcome" --step "two"`'
