@@ -4,4 +4,4 @@ env:
 steps:
   - label: "This should hide things? Or not?"
     command: echo "This is a $TEST_PASSWORD that is thisisatest"
-  - command: export MY_SECRET="123456789" echo "Testing 123456789"
+  - command: MY_SECRET="123456789" echo "Testing 123456789"
