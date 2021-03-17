@@ -1,12 +1,14 @@
 steps:
-  - command: echo "step-a fails" && exit 1
-    key: step-a
-  - command: echo "step-b does not run" && exit 0
-    key: step-b
-    depends_on:
-      - step: step-a
-  - command: echo "step-c runs even when step-b does not"
-    key: step-c
-    depends_on:
-      - step: step-b
-        allow_failure: true
+  - label: 'Step 1'
+    command: "false"
+    key: 'one'
+
+  - wait:
+    continue_on_failure: true
+
+  - label: 'Step 2'
+    command: |
+      if [ $$(buildkite-agent step get "outcome" --step "one") == 
+  "hard_failed" ]; then
+        buildkite-agent annotate 'this build failed' --style 'error'
+      fi
