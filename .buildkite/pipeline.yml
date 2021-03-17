@@ -3,5 +3,5 @@ env:
 
 steps:
   - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
-  - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
+  - command: echo "This is a $TEST_PASSWORD WITH A LABEL thisisatest"
     label: 'With a label'
