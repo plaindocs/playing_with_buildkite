@@ -2,4 +2,5 @@ env:
   TEST_PASSWORD:  "thisisatest"
 
 steps:
+  - label: "This should hide things? Or not? \n Test"
   - command: echo "This is a $TEST_PASSWORD that is thisisatest"
