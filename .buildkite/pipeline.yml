@@ -1,8 +1,7 @@
+env:
+  - TEST_PASSWORD:  "thisisatest"
+
 steps:
-  - command: TEST_PASSWORD="testtest"
-    label: "Another"
-  - command: echo "This is a $TEST_PASSWORD"
-    label: "Test the label?"
   - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
-  - command: echo TEST_PASSWORD was original and is now actuallysecret
-  - command: echo $TEST_PASSWORD was original and is now actuallysecret
+  - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
+    label: 'With a label'
