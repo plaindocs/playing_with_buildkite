@@ -2,6 +2,6 @@ env:
   TEST_PASSWORD:  "thisisatest"
 
 steps:
-  - label: "This should hide things? Or not?"
+  - label: "REDACT"
     command: echo "This is a $TEST_PASSWORD that is thisisatest"
-  - command: MY_SECRET="123456789" echo "Testing 123456789 $MY_SECRET"
+  - command: MY_SECRET="12345ff6789" echo "Testing 12345ff6789 $MY_SECRET thisisatest"
