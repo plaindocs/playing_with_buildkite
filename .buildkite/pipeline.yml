@@ -1,5 +1,5 @@
 env:
-  - TEST_PASSWORD:  "thisisatest"
+  TEST_PASSWORD:  "thisisatest"
 
 steps:
   - command: echo "This is a $TEST_PASSWORD WITHOUT A LABEL"
