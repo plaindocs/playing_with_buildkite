@@ -1,8 +1,8 @@
 env:
   TEST_PASSWORD:  "thisisatest"
-  MY_SECRET: "12345ff6789"
 
 steps:
-  - label: "REDACT"
-    command: echo "This is a $TEST_PASSWORD that is thisisatest"
-  - command: echo "Testing 12345ff6789 $MY_SECRET thisisatest"
+  - label: "Redact"
+    command: 
+      - echo "This is a secret variable in a string: $TEST_PASSWORD"
+      - echo "This is the same content in plain text in a string thisisatest"
