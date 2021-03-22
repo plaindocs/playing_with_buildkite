@@ -1,8 +1,8 @@
 env:
-  TEST_PASSWORD:  "thisisatest"
+  TEST_PASSWORD: "thisisatest"
 
 steps:
   - label: "Redact"
     command: 
-      - echo "This is a secret variable in a string: $TEST_PASSWORD"
-      - echo "This is the same content in plain text in a string thisisatest"
+    - echo "This is a secret variable in a string: $TEST_PASSWORD"
+    - echo "This is the same content in plain text in a string thisisatest"
