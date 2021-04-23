@@ -3,6 +3,6 @@ steps:
     command: echo 'hi'
   - label: 'REALLY'
     plugins:
-        detect-clowns#v2.0.0: ~
-        
+      -  detect-clowns#v2.0.0: ~
+      -  detect-clowns#v2.0.0: ~  
 
