@@ -1,8 +1,8 @@
 steps:
   - label: "Hello world"
-    command: 
-      - echo 'hi'
-      - echo "two"
+    command: echo 'hi'
     plugins:
       -  detect-clowns#v2.0.0: ~  
+  - label: "take 2"    
+    plugins:
       -  StarfallProjects/fwibble: ~
