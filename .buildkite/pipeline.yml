@@ -1,8 +1,7 @@
-env:
-  global: everywhere
-
 steps:
-  - command: echo "Env var test"
-    env:
-      TEST: "CHECK"
+  - command: echo 'hi'
+    label: "Hello world"
+    plugins:
+      - a-github-user/file-counter#v1.0.0:
+          pattern: '*.md'
 
