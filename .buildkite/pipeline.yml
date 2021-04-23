@@ -1,6 +1,6 @@
 steps:
   - label: "Hello world"
     command: echo 'hi'
-    plugins:
+  - plugins:
       - detect-clowns#v2.0.0: ~
 
