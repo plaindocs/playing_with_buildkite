@@ -3,3 +3,4 @@ steps:
     command: echo 'hi'
     plugins:
       -  detect-clowns#v2.0.0: ~  
+      -  StarfallProjects/fwibble: ~
