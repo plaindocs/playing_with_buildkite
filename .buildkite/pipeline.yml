@@ -2,6 +2,5 @@ steps:
   - command: echo 'hi'
     label: "Hello world"
     plugins:
-      - a-github-user/file-counter#v1.0.0:
-          pattern: '*.md'
+      - detect-clowns#v2.0.0: ~
 
