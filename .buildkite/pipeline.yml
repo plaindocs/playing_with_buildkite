@@ -6,5 +6,7 @@ steps:
         key: "name"
         hint: "Be as informal as you like."
       
-  - command: echo "Hello $(buildkite-agent meta-data get name)"
+  - command: 
+      - RELEASE_NAME=$(buildkite-agent meta-data get name || echo "Anon")
+      - echo "Hello $RELEASE_NAME"
     label: ":rocket:"
