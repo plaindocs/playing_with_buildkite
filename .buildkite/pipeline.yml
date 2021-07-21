@@ -1,5 +1,5 @@
 steps:
-  - command: echo "Just a deploy echo"
+  - command: echo "Testing the plugin array"
     plugins:
       - plaindocs/playing-with-plugins:
           test:
