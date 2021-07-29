@@ -3,4 +3,4 @@ steps:
 
   - block: 'Test'
 
-  - command: echo "Step B"  
+  - command: echo "Step B" 
