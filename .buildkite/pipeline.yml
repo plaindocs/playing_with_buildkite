@@ -1,8 +1,6 @@
 env:
   GLOBAL: global value we don't try to override
   GLOBAL_OVERRIDE: if you read this, then the global value takes precendence
-agents:
-  queue: 'upload'
 
 steps:
   - label: "Test for env variables resolution"
