@@ -1,6 +1,15 @@
+env:
+  GLOBAL: global value we don't try to override
+  GLOBAL_OVERRIDE: if you read this, then the global value takes precendence
+agents:
+  queue: 'upload'
+
 steps:
-  - command: echo "step-a"
-
-  - block: 'Test'
-
-  - command: echo "Step B" 
+  - label: "Test for env variables resolution"
+    command: |
+      echo "GLOBAL = $$GLOBAL"
+      echo "GLOBAL_OVERRIDE = $$GLOBAL_OVERRIDE"
+      echo "LOCAL = $$LOCAL"
+    env:
+      LOCAL: local value
+      GLOBAL_OVERRIDE: if you read this, then the global value was overridden by the local one
