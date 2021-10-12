@@ -8,7 +8,7 @@ steps:
 
   # explosion mode
   - name: ":mac: macOS"
-    command: "echo darwin %matrix.arch"
+    command: "echo darwin %matrix.arch {{matrix.arch}}"
     matrix:
       setup:
         arch:
