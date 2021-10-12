@@ -1,14 +1,14 @@
 steps:
   # simple mode
   - name: ":mac: macOS"
-    command: ".buildkite/steps/build-binary.sh darwin %matrix"
+    command: "echo darwin %matrix"
     matrix:
       - "amd64"
       - "arm64"
 
   # explosion mode
   - name: ":mac: macOS"
-    command: ".buildkite/steps/build-binary.sh darwin %matrix.arch"
+    command: "echo darwin %matrix.arch"
     matrix:
       setup:
         arch:
@@ -17,7 +17,7 @@ steps:
 
   # kitchen sink
   - name: "Build :hammer:"
-    command: ".buildkite/steps/build-binary.sh %matrix.os %matrix.arch"
+    command: "echo %matrix.os %matrix.arch"
     env:
       GO_ARCH: "%matrix.arch"
       GO_OS: "%matrix.os"
