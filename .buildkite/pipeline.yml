@@ -20,7 +20,7 @@ steps:
     command: "echo {{matrix.os}} {{matrix.arch}}"
     env:
       GO_ARCH: "{{matrix.arch}}"
-      GO_OS:" {{matrix.os}}"
+      GO_OS: "{{matrix.os}}"
     matrix:
       setup:
         arch:
