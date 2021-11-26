@@ -1,4 +1,4 @@
 steps:
   - command: echo "test"
   - block: "nope"
-    passed: true
+    blocked_state: passed
