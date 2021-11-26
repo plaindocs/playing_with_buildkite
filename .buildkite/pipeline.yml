@@ -1,10 +1,3 @@
-dag: true
-
 steps:
-  - command: "sleep 10"
-    label: "This depends on the other"
-    depends_on: "two"
-
-  - command: "sleep 10"
-    label: "Test"
-    id: "two"
+  - command: "Echo test"
+  - block: "nope"
