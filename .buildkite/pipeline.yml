@@ -4,8 +4,6 @@ steps:
     steps:
       - label: ":brakeman: Brakeman"
         command: "echo .buildkite/steps/brakeman"
-      - label: ":bundle: Bundle Audit"
-        command: "echo .buildkite/steps/bundleaudit"
       - label: ":yarn: Yarn Audit"
         command: "echo .buildkite/steps/yarn"
       - label: ":yarn: Outdated Check"
