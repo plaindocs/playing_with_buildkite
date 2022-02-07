@@ -1,4 +1,19 @@
 steps:
-  - command: echo "test"
-  - block: "nope"
-    blocked_state: passed
+  - group: ":lock_with_ink_pen: Security Audits"
+    key: "audits"
+    steps:
+      - label: ":brakeman: Brakeman"
+        command: ".buildkite/steps/brakeman"
+      - label: ":bundleaudit: Bundle Audit"
+        command: ".buildkite/steps/bundleaudit"
+      - label: ":yarn: Yarn Audit"
+        command: ".buildkite/steps/yarn"
+      - label: ":yarn: Outdated Check"
+        command: ".buildkite/steps/outdated"
+  - group: ":lock_with_ink_pen: Security Audits 2"
+    key: "audits"
+    steps:
+      - label: ":brakeman: Brakeman"
+        command: ".buildkite/steps/brakeman"
+      - label: ":bundleaudit: Bundle Audit"
+        command: ".buildkite/steps/bundleaudit"
