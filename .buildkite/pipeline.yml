@@ -10,8 +10,8 @@ steps:
         command: ".buildkite/steps/yarn"
       - label: ":yarn: Outdated Check"
         command: ".buildkite/steps/outdated"
-  - group: ":lock_with_ink_pen: Security Audits 2"
-    key: "audits"
+  - group: ":lock_with_ink_pen: Security Audits"
+    key: "audits2"
     steps:
       - label: ":brakeman: Brakeman"
         command: ".buildkite/steps/brakeman"
