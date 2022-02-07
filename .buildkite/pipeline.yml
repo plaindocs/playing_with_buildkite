@@ -6,7 +6,7 @@ steps:
         command: "echo .buildkite/steps/brakeman"
       - label: ":yarn: Yarn Audit"
         command: "echo .buildkite/steps/yarn"
-      - label: ":yarn: Outdated Check"
+      - label: ":date: Outdated Check"
         command: "echo .buildkite/steps/outdated"
   - group: "Linting"
     key: "linters"
