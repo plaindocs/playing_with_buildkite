@@ -18,6 +18,7 @@ steps:
   # kitchen sink
   - name: "Build :hammer:"
     command: "echo {{matrix.os}} {{matrix.arch}}"
+    key: test
     env:
       GO_ARCH: "{{matrix.arch}}" # User defined -> 
       GO_OS: "{{matrix.os}}"
